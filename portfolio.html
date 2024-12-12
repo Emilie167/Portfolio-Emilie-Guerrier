@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="portfolio.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Barriecito&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Barriecito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logotest.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emilie GUERRIER - Portfolio</title>
+</head>
+<body>
+    <header>
+    <nav>
+        <img src="img/logotest.png" class="headpic">
+        <p class="logotype" class="logotype">Emilie GUERRIER</p>
+        <ul class="principal">
+            <li><a href="portfolio.html">Accueil</a></li>
+            <li><a href="#projets">Mes projets</a></li>
+            <li><a href="stage_alternance.html">Stage/Alternance</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <div class="container">
+    <section class="accueil">
+        <h1>EMILIE <br>GUERRIER</h1>
+        <p class="port">Portfolio</p>
+        <img src="img/acphoto.png" alt="" class="ac" >
+    </section>
+
+</div>
+
+
+    <section class="biographie" id="biographie">
+        <p class="title">Qui suis-je ?</p>
+        <div class="content">
+            <img src="img/emi.jpg" class="photo" alt="Photo de Emilie">
+            <div class="gradient">
+                <p class="description">Emilie GUERRIER</p>
+                <p class="mooi">(Étudiante en deuxième année de BUT MMI)</p>
+                <p class="moi">
+                   
+                 Je suis une personne ambitieuse, curieuse et qui aime apprendre de nouvelles choses 
+                    pour développer davantage mes compétences. Je suis passionnée par l’illustration,
+                    le graphisme ainsi que le design. Ce que j'aime le plus c'est dessiner mais aussi faire du graphisme. J'ai toujours aimé créer et j'ai également toujours été attirée par l'art que ce soit le cinéma, la peinture, le dessin ou même la musique. 
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="box">Créative</div>
+            <div class="box">Curieuse</div>
+            <div class="box">Persévérante</div>
+        </div>
+        <a href="img/CV français.jpg" class="cv">MON CV</a>
+    </section>
+
+    <section class="drawing">
+
+    </section>
+
+    <section class="projects" id="projets">
+        <p class="title">Mes projets</p>
+        <p class="moi">Ici vous retrouvez quelques projets réalisés depuis ma première année de BUT MMI. Il y a également des dessins que j'ai effectué pour les cours mais également de mon côté. Je vous laisse découvrir ce que j'ai pu réalisé.</p>
+        <div class="images-container">
+            <img src="img/resa.png" alt="Projet 1" class="project-image" onclick="openPopup('Résaweb' , 'img/resa.png', 'Février - Juin 2023', 'Projet réalisé seule', 'Contexte : universitaire', 'Ce projet consistait à réaliser et coder dans l’entièreté, un site fictif de réservation. J’ai donc créé un site permettant de réserver des salles afin que des sportifs viennent s’enntraîner dans de bonnes conditions. Il fallait donc créée un formulaire fonctionnel etafficher les services avec ses divers détails. ', 'Langages utilisés : Pour effectuer ce site web, j’ai du utilisé divers langage de programmation comme le PHP pour stocker les données du formulaire de réservation, le HTML, CSS mais aussi du JavaScript. ','Lien du site : https://resaweb.guerrier.butmmi.o2switch.site/')">
+
+            <img src="img/interview.png" alt="Projet 2" class="project-image" onclick="openPopup('Interview', 'img/interview.png','Novembre 2023 - Janvier 2024','Projet réalisé en groupe','Contexte : universitaire',  'Il nous était demandé d’interviewer une professionnel de la photo que ce soit régisseur de studio, photographe et autres. Avec mon groupe, nous avons donc eu la chance d’interroger un photographe qui est Ludovic BARON. Nous avons réalisé l’interview à la Samaritaine, une vidéo qui a été réalisé avec des caméras, des micros, des spots de lumières. Pour finir, on a tous du rendre une interview différente à partir des rushs réalisés, j’ai donc fait le montage vidéo sur Adobe Premiere Pro.','Logiciel utilisé :  Adobe Premiere Pro', 'Lien de la vidéo: https://youtu.be/Bpri6Zx5vzo')">
+
+            <img src="img/refonte.png" alt="Projet 3" class="project-image" onclick="openPopup('Refonte d\'un Site', 'img/refonte.png', 'Mai - Juin 2024', 'Projet réalisé groupe','Contexte : universitaire','Pour ce projet, il était demandé de refaire l’interface entière d’un site déjà existant et de lui redonner un tout autre aspect, en changeant complètement son identité visuelle de base. On a donc choisi de partir sur le site d’Air France, qui à première vue, est assez épuré avec très peu d’éléments, de contenu et de couleurs vives. Pour lui donner une nouvelle image, on est donc parti sur un thème assez festif, proche du carnaval, avec bien évidemment des couleurs, des plumes et tout ce qui s’y rapproche. ', 'Logiciel utilisé : Figma', 'Lien du Figma : https://www.figma.com/design/t0DgeMzrUxoHqgDPpplUwL/AirFrance---Emilie-Guerrier---M%C3%A9lissa-Cumur-(Copy)?node-id=176-432&t=2e1gaex5c9FenXWB-1')">
+
+
+            
+            <img src="img/journal.png" alt="Projet 4" class="project-image" onclick="openPopup(
+                'Journal de quartier', 
+                'img/journal.png',
+                'Novembre - Décembre 2023', 
+                'Projet réalisé seule', 
+                'Contexte : universitaire', 
+                'Ce projet avait pour objectif de créer un journal de quartier sur la vie dans laquelle on vit, j’ai donc réalisé un journal sur la ville de Cergy. Pour ce faire, j’ai utilisé Adobe InDesign pour la mise en forme de mes textes et visuels, et Photoshop pour correctement traiter mes images afin qu’elles conviennent au projet et qu’elles ne soient pas déformés.',
+                'Logiciel utilisé : Adobe Indesign, Adobe Photoshop',  
+                '', 
+                'https://example.com/journal.pdf'
+            )">
+            
+
+            <img src="img/leporello.png" alt="Projet 5" class="project-image" onclick="openPopup('Leporello', 'img/leporello.png', 'Mars - Avril 2024','Projet réalisé seule','Contexte : universitaire','Il était demandé demander de dessiner une histoire à partir de la phrase suivant “Viens chez moi, j’habite dehors”, le tout sur cinq feuilles avec une première de couverture.  Il fallait donc utiliser son imagination, tenter d’avoir une idée originale sans pour autant trop sortir du contexte. De plus, l’histoire devait contenir un hôte et un invité, donc ici on peut y voir l’hôte que j’ai présenté sous forme de femme géante et je me suis mise dans l’histoire en tant qu’invité explorant ce monde inconnu.', 'Matériaux utilisés : feutres, feuilles A5' )">
+
+            <img src="img/dessin.png" alt="Projet 6" class="project-image" onclick="openPopup('Dessin Numérique', 'img/dessin.png', '', 'Depuis quelques années, je dessine que ce soit sur du papier ou de manière numérique. Mais je dessine de plus en plus sur ma tablette graphique ou simplement ma tablette pour faire divers types de dessins. J’ai également réalisé quelques dessins sur Adobe Fresco avec mon ordinateur.  J’utilise depuis peu Infinite Painter et actuellement je l’utilise très souvent pour mes dessins car je trouve l’application efficace et facile à utiliser. ', 'Logiciels utilisés : Adobe Fresco, Infinite Painter')">
+        </div>
+    </section>
+
+
+    <section class="avis">
+        <p class="title">Quelques avis</p>
+        <div class="reviews-container">
+            <!-- Premier avis -->
+            <div class="review">
+                <p class="nom">Hélène TALLON</p>
+               <p class="com">Responsable de la médiathèque intercommunale <br> Le Cube Garges</p>
+                <div class="review-content">
+                    <p class="nom1">" Emilie s’est montrée une stagiaire fiable, ponctuelle, qui a su s’intégrer dans l’équipe, et s’investit dans les quelques tâches confiées avec intérêt (accueil, prêt, rangement, classement, élaboration de statistique, sondage, observation, action culturelle)"</p>
+                </div>
+            </div>
+    
+            <!-- Deuxième avis -->
+            <div class="review">
+                <p class="nom">Mohamed EL BACHIR</p>
+                <p class="com"> Ancien collègue de travail</p>
+                <div class="review-content">
+                    <p class="review-content">test</p>
+                </div>
+            </div>
+    
+            <!-- Troisième avis -->
+            <div class="review">
+                <p class="nom">Alyssa KARAHAN</p>  
+                <p class="com">Etudiante en BUT MMI <br>
+                <div class="review-content">
+                    <p class="nom1">"Émilie est une personne pleine de vie, d’idées à la fois originales et prometteuses, avec qui je travaille depuis presque deux ans. C’est une créative talentueuse, passionnée par tout ce qui touche à l’illustration, au design et à la création en général. Toujours prête à repousser ses limites, elle apporte une énergie positive et inspirante !"</p> <!-- Nouveau texte -->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="competences">
+        <p class="title">Mes compétences</p>
+        <p class="com">
+            Maecenas cursus enim vitae massa volutpat tincidunt. Nam non euismod nibh. 
+            Curabitur sed ex et libero porttitor tempor sit amet sit amet arcu. 
+            Nunc vel faucibus massa. Duis non finibus lacus. Proin vitae libero dignissim, 
+            pellentesque mauris et, consequat leo.
+        </p>
+        <img src="img/compé.png" alt="Compétences" class="compé">
+    </section>
+
+    <div class="center"> 
+        <p class="title">Opquast</p>
+        <br>
+        <img src="img/opq.png" alt="" class="opq">
+    </div>
+
+    <footer id="contact">
+        <a href="https://www.linkedin.com/in/emilie-guerrier-9b696a194/" >Mon profil LinkedIn</a> 
+        <a href="mailto:emilie.guerrier16@gmail.com" >Mon mail</a> 
+        <p>Mentions légales</p>
+        
+        <p>Site réalisé par Emilie GUERRIER</p>
+        <p class="foot">© 2024 Emilie GUERRIER - Tous droits réservés</p>
+    </footer>
+    <div id="popup" class="popup">
+
+        
+        <div class="popup-content">
+            <!-- Bouton pour fermer -->
+            <span class="close" onclick="closePopup()">&times;</span>
+            <!-- Titre dynamique -->
+            <h2 id="popup-title">Titre par défaut</h2>
+            <p id="popup-projet">projet <br> Par exemple, un saut de ligne ici.</p>
+            <!-- Image dynamique -->
+
+            <img id="popup-image" src="" alt="Image du projet" />
+            <!-- Description avec possibilité de sauts de ligne -->
+            <p id="popup-date">date <br> Par exemple, un saut de ligne ici.</p>
+             <!-- Description avec possibilité de sauts de ligne -->
+             <p id="popup-contexte">texte par défaut. Ajoutez du texte ici. <br> Par exemple, un saut de ligne ici.</p>
+            <!-- Description avec possibilité de sauts de ligne -->
+            <p id="popup-description">Description par défaut. Ajoutez du texte ici. <br> Par exemple, un saut de ligne ici.</p>
+            <p id="popup-logiciel">Description par défaut. Ajoutez du texte ici. <br> Par exemple, un saut de ligne ici.</p>
+            <p id="popup-langage">Description par défaut. Ajoutez du texte ici. <br> Par exemple, un saut de ligne ici.</p>
+            <a href="img/JDQ web fin.pdf" target="_blank" id="pdf-button">
+                <button type="button" class="cv">Voir mon journal de quartier</button>
+            </a>
+            
+        </div>  
+        </div>
+    </div>
+
+    
+    
+
+    <script>
+        function openPopup(title, imageUrl, projet, date, contexte, description, logiciel, langage) {
+            // Mise à jour des éléments du pop-up avec les données spécifiques
+            document.getElementById("popup-title").innerText = title;
+            document.getElementById("popup-image").src = imageUrl;
+            document.getElementById("popup-projet").innerText = projet;
+            document.getElementById("popup-date").innerText = date;
+            document.getElementById("popup-contexte").innerText = contexte;
+            document.getElementById("popup-description").innerText = description;
+            document.getElementById("popup-logiciel").innerText = logiciel;
+            document.getElementById("popup-langage").innerText = langage;
+
+
+            const pdfButton = document.getElementById("pdf-button");
+    if (title === "Journal de quartier") {
+        pdfButton.style.display = "inline"; // Affiche le bouton pour "Journal de quartier"
+    } else {
+        pdfButton.style.display = "none"; // Masque le bouton pour les autres projets
+    }
+
+    // Affichage du pop-up
+    const popup = document.getElementById("popup");
+    popup.style.display = "flex";
+}
+
+
+        function closePopup() {
+            // Masque le pop-up
+            const popup = document.getElementById("popup");
+            popup.style.display = "none";
+        }
+
+        
+    </script>
+    
+</body>
+</html>
