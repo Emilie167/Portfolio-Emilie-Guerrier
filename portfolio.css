@@ -13,18 +13,29 @@ body {
     color: rgb(0, 0, 0); /* Texte en blanc */
     text-decoration: none; /* Supprime le soulignement */
     border-radius: 25px;
+    cursor: pointer;
     border: 2px solid black;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     transition: background-color 0.3s; /* Animation pour le hover */
 }
 
-
+.contactez {
+    color: white;
+    font-size: 2em;
+    text-align: center; /* Centre le texte horizontalement */
+    margin: 0;
+    margin-bottom: 30px; /* Évite un marges supplémentaires par défaut autour du h1 */
+}
 
 .button-container {
-    display: flex; /* Aligne les boutons en ligne */
-    gap: 10px; /* Espace entre les boutons */
+    display: flex;
+    justify-content: center; /* Centre les boutons horizontalement */
+    gap: 20px; /* Espace entre les boutons */
+    margin-bottom: 30px; /* Un peu d'espace sous les boutons */
 }
+
+
 
 .headpic {
     width: 160px;
@@ -178,6 +189,7 @@ h1 {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     position: relative;
+    cursor: pointer;
     bottom: 20px; /* Remonte légèrement par rapport au bas */
 }
 
@@ -775,7 +787,8 @@ font-family: "Poppins";
 
 
 .popup-interview .popup-content {
-    background-color: #ffe0e0; /* Fond rose clair pour "Interview" */
+    background-color: #ffe0e0;
+    justify-content: left; /* Fond rose clair pour "Interview" */
 }
 
 
@@ -793,9 +806,21 @@ font-family: "Poppins";
     background-color: #ffe0e0;  /* Fond vert clair pour "Leporello" */
 }
 
+.popup-content p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: black; /* Couleur secondaire du texte */
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+}
+
+
+
 
 .popup-dessin .popup-content {
-    background-color: #ffe0e0;  /* Fond violet clair pour "Dessin Numérique" */
+    background-color: #ffe0e0;
+   
+    font-family: 'Poppins', sans-serif;/* Fond violet clair pour "Dessin Numérique" */
 }
 
 
@@ -820,5 +845,5 @@ font-family: "Poppins";
 .scroll-button:hover {
     background-color: black;
     color: white;
-   
+    cursor: pointer;
 }
