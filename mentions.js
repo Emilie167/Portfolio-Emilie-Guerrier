@@ -1,4 +1,4 @@
-//Fenêtre pop-up pour l'affichage des mentions légales
+//Fenêtre pop-up
 
 document.getElementById("btnPopup").addEventListener("click", function() {
     document.getElementById("popup").style.display = "block";
