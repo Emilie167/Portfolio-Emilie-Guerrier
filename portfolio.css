@@ -1,9 +1,10 @@
 body {
     background-color: #e9efe7;
     scroll-behavior: smooth;
-    margin: 0; /* Supprime les marges par défaut */
-    padding: 0; /* Supprime les paddings par défaut */
+    margin: 0; 
+    padding: 0; 
 }
+
 
 
 .btn {
@@ -246,6 +247,7 @@ h1 {
     padding: 10px;
     margin: 10px auto;
     font-size: 1rem;
+    
 }
 
 
@@ -385,7 +387,7 @@ h1 {
 
 
 .recherche{
-    background-color: #CDC3D7;
+    background: linear-gradient(90deg, #F2B8C7 0%, #C9C4D9 100%);
 }
 
 
@@ -426,6 +428,21 @@ footer {
     line-height: 1.4;
 }
 
+.moi2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    align-items: left;
+    justify-content: left;
+    margin: 20px auto; /* Plus d'espace extérieur */
+    max-width: 700px;
+    padding: 20px; /* Plus d'espace intérieur */
+    line-height: 1.6; /* Amélioration de l'espacement entre les lignes */
+    font-size: 1.2em;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
 
 /* Dégradé */
 .gradient {
@@ -677,23 +694,26 @@ font-family: "Poppins";
 
 
     }
-  .center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #CD92B4;
-}
+    .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        min-height: 50%; 
+        margin: auto 0; 
+        background-color: #CD92B4;
+        padding: 10px; 
+        text-align: center;
+    }
+
 .popup {
-    display: none; /* Masqué par défaut */
+    display: none; 
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+    background-color: rgba(0, 0, 0, 0.8); 
     z-index: 1000; /* Toujours au-dessus */
     justify-content: center;
     align-items: center;
