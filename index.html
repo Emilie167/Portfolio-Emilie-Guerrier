@@ -27,7 +27,7 @@
                 <p class="logotype">EMILIE GUERRIER</p>
             </div>
             <div class="nav-right">
-                <!-- Vos éléments de navigation à droite -->
+               
                 <ul class="principal">
                     <li><a href="#projets">Mes projets</a></li>
                     <li><a href="stage_alternance.html">Stage/Alternance</a></li>
@@ -56,7 +56,8 @@
             <div class="gradient">
                 <p class="description">Emilie GUERRIER</p>
                 <p class="description">20 ans</p>
-                <p class="mooi">Étudiante en deuxième année de BUT MMI</p>
+                <p class="mooi">Étudiante en deuxième année de BUT MMI - 
+                    Île-de-France</p>
                 <p class="moi">
                    
                  Je suis une personne ambitieuse, curieuse et qui aime apprendre de nouvelles choses 
@@ -157,9 +158,9 @@
    
         <a href="https://www.linkedin.com/in/emilie-guerrier-9b696a194/" class="btn">Profil LinkedIn</a>
         <a href="mailto:emilie.guerrier16@gmail.com" class="btn">Mail</a>
-  <!-- Ajout d'une ligne vide pour espacer -->
-   
-        <a href="#" class="btn">Mentions légales</a>
+
+        <a href="#" class="btn" onclick="openMentionsPopup()">Mentions légales</a>
+
   
     <p class="foot">© 2025 Emilie GUERRIER - Tous droits réservés</p>
 </footer>
@@ -230,8 +231,8 @@
         case 'Leporello':
             pdfButtonLink.href = "https://www.lien-de-ton-projet-leporello.com";
             break;
-        case 'Dessin Numérique':
-            pdfButtonLink.href = "img/dessinperso.pdf";
+        case 'Dessins personnels':
+            pdfButtonLink.href = 'img/dessins.pdf';
             break;
         default:
             pdfButtonLink.href = "#"; // Lien par défaut si aucun projet n'est trouvé
@@ -251,7 +252,75 @@
                 behavior: 'smooth'
             });
         }
+
+
+        document.addEventListener('scroll', () => {
+  const elements = document.querySelectorAll('.photo, .description, .moi, .box');
+  elements.forEach((element) => {
+    const rect = element.getBoundingClientRect();
+    if (rect.top < window.innerHeight) {
+      element.classList.add('visible');
+    }
+  });
+});
+
+document.addEventListener('scroll', () => {
+  const elements = document.querySelectorAll('.title, .review');
+  elements.forEach((element) => {
+    const rect = element.getBoundingClientRect();
+    if (rect.top < window.innerHeight) {
+      element.classList.add('visible');
+    }
+  });
+});
+document.addEventListener('DOMContentLoaded', () => {
+  const reviews = document.querySelectorAll('.review');
+  const sectionAvis = document.querySelector('.avis');
+
+  // Fonction pour vérifier si la section est visible
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          reviews.forEach((review, index) => {
+            setTimeout(() => {
+              review.classList.add('visible');
+            }, index * 300); // Délai entre chaque avis (300ms ici)
+          });
+        }
+      });
+    },
+    { threshold: 0.1 } // 10% de la section visible pour déclencher
+  );
+
+  observer.observe(sectionAvis);
+});
+function openMentionsPopup() {
+    const popup = document.getElementById("mentions-popup");
+    popup.style.display = "flex";
+}
+
+function closeMentionsPopup() {
+    const popup = document.getElementById("mentions-popup");
+    popup.style.display = "none";
+}
+
     </script>
+<div id="mentions-popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closeMentionsPopup()">&times;</span>
+        <h2>Mentions légales</h2>
+        <p>
+            Ce site est édité par Emilie Guerrier. <br>
+            Images : Toutes les images ont été réalisées par mes soins. <br>
+            Hébergement : Github. <br>
+            Contact : <a href="mailto:emilie.guerrier16@gmail.com">emilie.guerrier16@gmail.com</a><br>
+            Toute reproduction, totale ou partielle, des contenus présents sur ce site est interdite sans l'accord préalable de l'éditeur.
+        </p>
+    </div>
+</div>
+
+
     
 </body>
 </html>
