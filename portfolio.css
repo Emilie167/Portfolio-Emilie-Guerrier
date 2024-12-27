@@ -103,7 +103,29 @@ h1 {
     text-align: left;
     margin-bottom: 10px;
     bottom: 20px; 
+    animation: fadeIn 2s ease-in-out, glow 1.5s infinite alternate;
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+    }
+    to {
+        text-shadow: 0 0 20px #ff69b4, 0 0 30px #ff69b4;
+    }
+}
+
 
 
 .nav-right {
@@ -132,14 +154,21 @@ h1 {
     box-sizing: border-box;
 }
 
-
-
-
 .ac {
-    max-width: 25%; /* Adapte la taille de l'image */
-    height: auto;
-    margin-left: 20px; /* Espace entre l'image et le texte */
-}
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
 
 
 
@@ -506,18 +535,14 @@ footer {
 
 
 .project-image {
-    width: 40%;
-    height: auto;
-    transition: transform 0.3s ease-in-out;
-   
-    margin: 0 auto;
-}
-
-
-.project-image:hover {
+    width: 100%;
+    transition: transform 0.4s ease-in-out;
     cursor: pointer;
-    transform: scale(1.05);
-}
+  }
+  
+  .project-image:hover {
+    transform: scale(1.05) rotate(3deg);
+  }
 
 
 /* Ajustement pour les petits écrans : 2 images par ligne */
