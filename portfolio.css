@@ -338,11 +338,51 @@ h1 {
 }
 
 
-/* Pied de page */
+.title {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .title.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
 .foot {
     font-family: "Poppins";
 }
+.box {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .box.visible {
+    opacity: 1;
+    transform: scale(1);
+  }
 
+
+  
+  @media (min-width: 768px) {
+    .reviews-container {
+      grid-template-columns: 1fr 1fr; /* Deux colonnes sur les écrans moyens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .reviews-container {
+      grid-template-columns: 1fr 1fr 1fr; /* Trois colonnes sur les grands écrans */
+    }
+  }
+  .review:hover {
+    box-shadow: 0px 4px 15px rgba(251, 241, 100, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+
+  
 
 .box {
     background-color: #eaeaea;
@@ -891,4 +931,216 @@ font-family: "Poppins";
     background-color: black;
     color: white;
     cursor: pointer;
+}
+/* Responsive pour téléphones (petits écrans) */
+@media (max-width: 768px) {
+    /* Général */
+    body {
+        padding: 10px; /* Ajoute un peu de padding pour éviter que le contenu touche les bords */
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: flex-start; /* Place les éléments à gauche */
+    }
+
+    .nav-left, .nav-right {
+        flex-direction: column;
+        gap: 5px; /* Réduit l'espace entre les éléments */
+    }
+
+    .principal li {
+        display: block;
+        margin: 5px 0; /* Place chaque élément sur une ligne */
+    }
+
+    .principal a {
+        font-size: 1.5em; /* Réduit légèrement la taille de police */
+    }
+
+    /* Sections */
+    section {
+        height: auto; /* Supprime la contrainte de hauteur pour éviter des coupures */
+        padding: 20px; /* Ajoute du padding */
+    }
+
+    h1 {
+        font-size: 2.5em; /* Réduit la taille pour qu'elle tienne sur un écran de téléphone */
+        text-align: center; /* Centre le texte */
+    }
+
+    .text-content {
+        max-width: 90%; /* Permet au texte de s'adapter à la largeur de l'écran */
+        margin: 0 auto; /* Centre le texte */
+    }
+
+    /* Images */
+    .headpic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .photo, .ac {
+        width: 100%;
+        height: auto;
+        margin: 0 auto; /* Centre les images */
+    }
+
+    /* Boutons */
+    .btn, .cv {
+        padding: 10px;
+        font-size: 14px; /* Taille adaptée pour des boutons sur mobile */
+        width: 100%;
+    }
+
+    .button-container {
+        flex-direction: column; /* Aligne les boutons en colonne */
+        gap: 10px;
+    }
+
+    /* Biographie */
+    .biographie .content {
+        flex-direction: column; /* Place l'image et le texte en colonne */
+        align-items: center; /* Centre le contenu */
+    }
+
+    .biographie img {
+        width: 80%;
+        height: auto; /* Ajuste automatiquement la hauteur */
+        margin-bottom: 20px;
+    }
+
+    .moi, .moi2 {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    /* Avis */
+    .reviews-container {
+        flex-direction: column; /* Les avis s'empilent */
+        gap: 20px;
+    }
+
+    .review {
+        width: 90%; /* Occupe presque toute la largeur */
+        margin: 0 auto; /* Centre chaque avis */
+    }
+
+    /* Portfolio */
+    .projects .images-container {
+        grid-template-columns: 1fr; /* Une seule colonne */
+        gap: 20px; /* Plus d'espace entre les projets */
+    }
+
+    .project-image {
+        width: 90%; /* Images plus petites */
+        margin: 0 auto;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.9em; /* Réduit légèrement la taille */
+        padding: 20px;
+    }
+
+    /* Popup */
+    .popup-content {
+        width: 90%; /* Limite la largeur */
+        max-height: 80vh;
+    }
+
+    .popup-content img {
+        max-height: 200px;
+    }
+}
+
+/* Section Accueil (Responsive) */
+@media (max-width: 768px) {
+    section.accueil {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        text-align: center;
+        height: auto; /* Supprime la contrainte de hauteur */
+    }
+
+    section.accueil h1 {
+        font-size: 2.2em; /* Ajuste la taille pour mobile */
+        margin-bottom: 15px;
+    }
+
+    section.accueil .headpic {
+        width: 120px; /* Réduit la taille de l'image */
+        height: 120px;
+        margin-bottom: 15px; /* Ajoute de l'espace sous l'image */
+    }
+
+    section.accueil .text-content {
+        font-size: 1.2em; /* Taille du texte adaptée */
+        line-height: 1.5; /* Espacement entre les lignes */
+        max-width: 90%; /* Ajuste le texte à la largeur de l'écran */
+        margin-bottom: 20px;
+    }
+
+    section.accueil .button-container {
+        display: flex;
+        flex-direction: column; /* Empile les boutons verticalement */
+        gap: 10px; /* Espacement entre les boutons */
+        width: 100%; /* Prend toute la largeur */
+    }
+
+    section.accueil .btn, section.accueil .cv {
+        padding: 12px 15px; /* Augmente le padding pour le tactile */
+        font-size: 1em; /* Taille adaptée pour mobile */
+        width: 90%; /* Largeur des boutons réduite à 90% */
+        margin: 0 auto; /* Centre les boutons */
+        text-align: center;
+        border-radius: 5px; /* Bords arrondis pour un design agréable */
+    }
+}
+/* Style pour le popup des mentions légales */
+.legal-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.legal-popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.legal-popup .close-legal {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.legal-popup h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.legal-popup p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
 }
