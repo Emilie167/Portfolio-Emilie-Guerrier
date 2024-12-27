@@ -49,7 +49,8 @@
     </section>
     
     <section class="recherche">
-<p class="moi2"> Je suis actuellement à la recherche d’un stage à effectuer à partir du 7 avril 2025, pour une durée minimale de trois mois. Je souhaite effectuer ce stage dans le domaine du graphisme, de l’illustration ou du montage vidéo.
+<p class="moi2"> Je suis actuellement à la recherche d’un stage à effectuer à partir du 7 avril 2025 en 
+    Île-de-France, pour une durée minimale de trois mois. Je souhaite effectuer ce stage dans le domaine du graphisme, de l’illustration ou du montage vidéo.
     <br><br>Je suis une personne très créative, toujours à la recherche de nouveauté et prête à apprendre de nouvelles choses.
     Ce stage me permettra de découvrir encore davantage un métier qui me ressemble et que j’espère pouvoir exercer plus tard.
     <br><br>J’espère avoir pu attirer votre attention à travers ce portfolio ainsi que mes divers travaux, qui, je l’espère, ont su éveiller votre curiosité.
@@ -62,9 +63,36 @@
        
             <a href="https://www.linkedin.com/in/emilie-guerrier-9b696a194/" class="btn">Profil LinkedIn</a>
             <a href="mailto:emilie.guerrier16@gmail.com" class="btn">Mail</a>
-      <!-- Ajout d'une ligne vide pour espacer -->
-       
-            <a href="#" class="btn">Mentions légales</a>
+    
+            <a href="#" class="btn" onclick="openMentionsPopup()">Mentions légales</a>
+    
       
         <p class="foot">© 2025 Emilie GUERRIER - Tous droits réservés</p>
     </footer>
+    
+
+    <div id="mentions-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closeMentionsPopup()">&times;</span>
+            <h2>Mentions légales</h2>
+            <p>
+                Ce site est édité par Emilie Guerrier. <br>
+                Images : Toutes les images ont été réalisées par mes soins. <br>
+                Hébergement : Github. <br>
+                Contact : <a href="mailto:emilie.guerrier16@gmail.com">emilie.guerrier16@gmail.com</a><br>
+                Toute reproduction, totale ou partielle, des contenus présents sur ce site est interdite sans l'accord préalable de l'éditeur.
+            </p>
+        </div>
+    </div>
+    <script>
+        function openMentionsPopup() {
+    const popup = document.getElementById("mentions-popup");
+    popup.style.display = "flex";
+}
+
+function closeMentionsPopup() {
+    const popup = document.getElementById("mentions-popup");
+    popup.style.display = "none";
+}
+    </script>
+</body>
