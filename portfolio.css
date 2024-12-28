@@ -839,6 +839,10 @@ font-family: "Poppins";
 
 .competences1{
     background: linear-gradient(180deg, #EFEFE7 0%, #FFD0E4 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 .competences p,
 .competences div {
@@ -906,6 +910,14 @@ font-family: "Poppins";
     background-color: #ffe0e0;
    
     font-family: 'Poppins', sans-serif;/* Fond violet clair pour "Dessin Numérique" */
+}
+
+.stage {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Espace entre les sections */
 }
 
 
