@@ -493,7 +493,9 @@ footer {
     align-items: left;
     justify-content: left;
     margin: auto;
-    max-width: 700px;
+    margin-bottom: 20px;
+    padding-left: 0;
+    max-width: 100%; 
     line-height: 1.4;
 }
 
@@ -564,25 +566,49 @@ footer {
     margin: 10px;
 }
 
-
-.projects .images-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    padding: 20px;
-   
+.projects-container {
+    display: flex; /* Disposition en ligne */
+    justify-content: center; /* Centrer les boîtes horizontalement */
+    align-items: flex-start; /* Aligne les éléments en haut */
+    gap: 15px; /* Réduit l'espacement entre les boîtes et le GIF */
+    margin: 0 20px; /* Ajouter de l'espace à gauche et à droite des conteneurs */
 }
 
+.images-container {
+    flex: 3; /* Les boîtes occupent plus d'espace */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Trois colonnes */
+    gap: 10px; /* Réduit l'espacement entre les images */
+    padding-right: 10px; /* Réduit l'espace à droite des boîtes */
+    max-width: 1200px; /* Fixe une largeur maximale pour éviter l'élargissement excessif */
+}
+
+.gif-container {
+    flex: 1; /* Le GIF occupe moins d'espace */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px; /* Réduit l'espace entre les boîtes et le GIF */
+    margin-top: -150px; /* Remonte légèrement le GIF */
+}
+
+.project-gif {
+    max-width: 80%; /* Adapte la largeur du GIF au conteneur */
+    height: auto; /* Conserve les proportions */
+    border-radius: 10px; /* Ajoute des bords arrondis pour un design cohérent */
+}
 
 .project-image {
     width: 100%;
     transition: transform 0.4s ease-in-out;
     cursor: pointer;
-  }
-  
-  .project-image:hover {
+}
+
+.project-image:hover {
     transform: scale(1.05) rotate(3deg);
-  }
+}
+
+
 
 
 /* Ajustement pour les petits écrans : 2 images par ligne */
