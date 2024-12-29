@@ -321,10 +321,13 @@ h1 {
 /* Titre des avis */
 .title {
     font-family: "barriecito";
-    text-align: right;
     font-size: 3.7em;
     margin-bottom: 5px;
-}
+        text-align: left; /* Aligne le texte à gauche */
+        margin-left: 0; /* Supprime toute marge gauche */
+        margin-top: 0; /* Ajuste l'espace au-dessus si nécessaire */
+        padding-left: 0; /* Supprime tout padding éventuel */
+    }
 
 
 .port {
@@ -347,6 +350,7 @@ h1 {
   .title.visible {
     opacity: 1;
     transform: translateY(0);
+    
   }
 
 .foot {
@@ -485,19 +489,21 @@ footer {
     font-style: normal;
 }
 
-
 .moi {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-style: normal;
-    align-items: left;
-    justify-content: left;
-    margin: auto;
-    margin-bottom: 20px;
-    padding-left: 0;
-    max-width: 100%; 
-    line-height: 1.4;
+    text-align: left; /* Aligne le texte à gauche */
+    margin-left: 0; /* Supprime toute marge à gauche */
+    margin-right: 0; /* Supprime toute marge à droite */
+    margin-bottom: 20px; /* Espace en bas pour séparer du contenu suivant */
+    line-height: 1.6; /* Améliore la lisibilité */
+    max-width: 600px; /* Largeur maximale pour éviter des lignes trop longues */
+    padding-left: 0; /* Supprime tout éventuel padding */
 }
+
+
+
 
 .moi2 {
     font-family: 'Poppins', sans-serif;
@@ -568,30 +574,29 @@ footer {
 
 .projects-container {
     display: flex; /* Disposition en ligne */
-    justify-content: center; /* Centrer les boîtes horizontalement */
+    justify-content: flex-start; /* Aligne les boîtes à gauche */
     align-items: flex-start; /* Aligne les éléments en haut */
-    gap: 15px; /* Réduit l'espacement entre les boîtes et le GIF */
-    margin: 0 20px; /* Ajouter de l'espace à gauche et à droite des conteneurs */
+    gap: 15px; /* Espace entre les boîtes et le GIF */
+    margin-left: 0; /* Supprime toute marge gauche */
+    padding-left: 0; /* Supprime tout padding gauche éventuel */
 }
+
 
 .images-container {
     flex: 3; /* Les boîtes occupent plus d'espace */
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Trois colonnes */
     gap: 10px; /* Réduit l'espacement entre les images */
-    padding-right: 10px; /* Réduit l'espace à droite des boîtes */
     max-width: 1200px; /* Fixe une largeur maximale pour éviter l'élargissement excessif */
 }
 
 .gif-container {
     flex: 1; /* Le GIF occupe moins d'espace */
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Maintient le GIF centré horizontalement */
     align-items: center;
-    padding-left: 10px; /* Réduit l'espace entre les boîtes et le GIF */
-    margin-top: -150px; /* Remonte légèrement le GIF */
+    margin-top: -150px; /* Décale le GIF vers le haut */
 }
-
 .project-gif {
     max-width: 80%; /* Adapte la largeur du GIF au conteneur */
     height: auto; /* Conserve les proportions */
