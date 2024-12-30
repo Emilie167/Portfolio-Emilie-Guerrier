@@ -2,32 +2,31 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <!-- Lien vers la feuille de styles CSS principale -->
     <link rel="stylesheet" href="portfolio.css">
-    <link rel="stylesheet" href="portfolio.js">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Barriecito&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Préchargement des polices Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Barriecito&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Barriecito&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Favicon du site -->
     <link rel="icon" href="img/Logo.png" />
+    <!-- Configuration pour un affichage responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titre de la page -->
     <title>Emilie GUERRIER - Stage/alternance</title>
 </head>
 <body>
     <header>
         <nav>
+            <!-- Section gauche de la navigation avec le logo -->
             <div class="nav-left">
-                <div class="nav-left">
-                    <a href="index.html">
-                        <img src="img/Logo.png" class="headpic" alt="Logo">
-                    </a>
-                </div>
+                <a href="index.html">
+                    <img src="img/Logo.png" class="headpic" alt="Logo">
+                </a>
                 <p class="logotype">EMILIE GUERRIER</p>
             </div>
+            <!-- Section droite de la navigation avec les liens -->
             <div class="nav-right">
-                <!-- Vos éléments de navigation à droite -->
                 <ul class="principal">
                     <li><a href="#projets">Projets</a></li>
                     <li><a href="stage_alternance.html">Stage/Alternance</a></li>
@@ -37,10 +36,11 @@
         </nav>
     </header>
 
-        <div class="stage">
+    <!-- Section d'annonce pour le stage -->
+    <div class="stage">
         <h1 class="title2">Stage 2025</h1>
-
         <div class="box2">À partir du 7 avril 2025</div>
+        <!-- Domaines d'intérêt pour le stage -->
         <div>
             <div class="box1">Graphisme</div>
             <div class="box1">Illustration</div>
@@ -48,29 +48,30 @@
         </div>
     </div>
     
+    <!-- Section de présentation et de recherche de stage -->
     <section class="recherche">
-<p class="moi2"> Je suis actuellement à la recherche d’un stage à effectuer à partir du 7 avril 2025 en 
-    Île-de-France, pour une durée minimale de trois mois. Je souhaite effectuer ce stage dans le domaine du graphisme, de l’illustration ou du montage vidéo.
-    <br><br>Je suis une personne très créative, toujours à la recherche de nouveauté et prête à apprendre de nouvelles choses.
-    Ce stage me permettra de découvrir encore davantage un métier qui me ressemble et que j’espère pouvoir exercer plus tard.
-    <br><br>J’espère avoir pu attirer votre attention à travers ce portfolio ainsi que mes divers travaux, qui, je l’espère, ont su éveiller votre curiosité.
-    Vous retrouverez mes contacts un peu plus bas sur cette page.
-    </p>
-
+        <p class="moi2"> 
+            Je suis actuellement à la recherche d’un stage à effectuer à partir du 7 avril 2025 en 
+            Île-de-France, pour une durée minimale de trois mois. Je souhaite effectuer ce stage dans le domaine du graphisme, de l’illustration ou du montage vidéo.
+            <br><br>
+            Je suis une personne très créative, toujours à la recherche de nouveauté et prête à apprendre de nouvelles choses.
+            Ce stage me permettra de découvrir encore davantage un métier qui me ressemble et que j’espère pouvoir exercer plus tard.
+            <br><br>
+            J’espère avoir pu attirer votre attention à travers ce portfolio ainsi que mes divers travaux, qui, je l’espère, ont su éveiller votre curiosité.
+            Vous retrouverez mes contacts un peu plus bas sur cette page.
+        </p>
     </section>
+
+    <!-- Pied de page contenant les contacts -->
     <footer id="contacts">
         <h1 class="contactez">Contacts</h1>
-       
-            <a href="https://www.linkedin.com/in/emilie-guerrier-9b696a194/" class="btn">Profil LinkedIn</a>
-            <a href="mailto:emilie.guerrier16@gmail.com" class="btn">Mail</a>
-    
-            <a href="#" class="btn" onclick="openMentionsPopup()">Mentions légales</a>
-    
-      
+        <a href="https://www.linkedin.com/in/emilie-guerrier-9b696a194/" class="btn">Profil LinkedIn</a>
+        <a href="mailto:emilie.guerrier16@gmail.com" class="btn">Mail</a>
+        <a href="#" class="btn" onclick="openMentionsPopup()">Mentions légales</a>
         <p class="foot">© 2025 Emilie GUERRIER - Tous droits réservés</p>
     </footer>
-    
 
+    <!-- Popup pour les mentions légales -->
     <div id="mentions-popup" class="popup">
         <div class="popup-content">
             <span class="close" onclick="closeMentionsPopup()">&times;</span>
@@ -84,15 +85,18 @@
             </p>
         </div>
     </div>
+
+    <!-- Script pour gérer l'ouverture/fermeture du popup -->
     <script>
         function openMentionsPopup() {
-    const popup = document.getElementById("mentions-popup");
-    popup.style.display = "flex";
-}
+            const popup = document.getElementById("mentions-popup");
+            popup.style.display = "flex";
+        }
 
-function closeMentionsPopup() {
-    const popup = document.getElementById("mentions-popup");
-    popup.style.display = "none";
-}
+        function closeMentionsPopup() {
+            const popup = document.getElementById("mentions-popup");
+            popup.style.display = "none";
+        }
     </script>
 </body>
+</html>
