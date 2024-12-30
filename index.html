@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="portfolio.css">
-    <link rel="stylesheet" href="portfolio.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Barriecito&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -18,16 +17,19 @@
 <body>
     <header>
         <nav>
+            <!-- Logo avec un lien vers la page d'accueil -->
             <div class="nav-left">
+                
                 <div class="nav-left">
                     <a href="index.html">
                         <img src="img/Logo.png" class="headpic" alt="Logo">
                     </a>
                 </div>
+                 <!-- Texte affichant le nom -->
                 <p class="logotype">EMILIE GUERRIER</p>
             </div>
             <div class="nav-right">
-               
+                  <!-- Menu de navigation principal -->
                 <ul class="principal">
                     <li><a href="#projets">Projets</a></li>
                     <li><a href="stage_alternance.html">Stage/Alternance</a></li>
@@ -37,27 +39,33 @@
         </nav>
     </header>
 
-   
+     <!-- Section d'accueil --> 
         <section class="accueil">
             <div class="text-content">
+                 <!-- Titre principal -->
                 <h1>EMILIE <br>GUERRIER</h1>
+                <!-- Sous-titre -->
                 <p class="port">Portfolio</p>
             </div>
+              <!-- Image d'accueil -->
             <img src="img/acphoto.png" alt="Photo" class="ac">
+              <!-- Bouton avec défilement vers une section -->
             <button class="scroll-button" onclick="scrollToSection('biographie')">Découvrir mon univers</button>
         </section>
    
 
-
+  <!-- Section biographie -->
     <section class="biographie" id="biographie">
         <p class="title">Qui suis-je ?</p>
         <div class="content">
             <img src="img/emi.jpg" class="photo" alt="Photo de Emilie">
             <div class="gradient">
+                 <!-- Les informations me concernant -->
                 <p class="description">Emilie GUERRIER</p>
                 <p class="description">20 ans</p>
                 <p class="mooi">Étudiante en deuxième année de BUT MMI - 
                     Île-de-France</p>
+                     <!-- Texte de présentation -->
                 <p class="moi">
                    
                  Je suis une personne ambitieuse, curieuse et qui aime apprendre de nouvelles choses 
@@ -71,13 +79,16 @@
             <div class="box">Curieuse</div>
             <div class="box">Persévérante</div>
         </div>
+         <!-- Lien vers le CV -->
         <a href="img/CV français.jpg" class="cv">Mon CV</a>
     </section>
 
+     <!-- Section dessins -->
     <section class="drawing">
 
     </section>
 
+    <!-- Section projets -->
     <section class="projects" id="projets">
         <p class="title">Mes projets</p>
         <p class="moi">Ici, vous retrouvez quelques projets réalisés depuis ma première année de BUT MMI. <br>Il y a également des dessins que j'ai effectués pour les cours, mais également de mon côté.</p>
@@ -105,7 +116,7 @@
         </div>
     </section>
     
-
+ <!-- Section avis -->
 
     <section class="avis">
         <p class="title">Quelques avis</p>
@@ -140,7 +151,6 @@
     </section>
 
     
-  
 
         <div class="competences1">
         <p class="title">Mes compétences</p>
@@ -154,7 +164,7 @@
         <img src="img/opquast.png" alt="" class="opq">
     </div>
 
-    
+       <!-- Footer -->
 <footer id="contacts">
     <h1 class="contactez">Contacts</h1>
    
@@ -196,7 +206,7 @@
         </div>
     </div>
 
-    
+      <!-- Script JS -->
     
     <script>
        function openPopup(title, imageUrl, projet, date, contexte, description, logiciel, langage) {
