@@ -96,11 +96,11 @@
         <div class="projects-container">
             <!-- Conteneur des images de projets -->
             <div class="images-container">
-                <img src="img/resa.png" alt="Projet 1" class="project-image" onclick="openPopup('Résaweb', 'Février - Juin 2023', 'Projet réalisé seule', 'Contexte : universitaire', 'Ce projet consistait à réaliser et coder dans son intégralité, un site fictif de réservation. J’ai donc créé un site permettant de réserver des salles afin que des sportifs viennent s’entraîner dans de bonnes conditions. Il fallait donc créer un formulaire fonctionnel et afficher les services avec leurs divers détails.', 'Langages utilisés : Pour effectuer ce site web, j’ai dû utiliser divers langages de programmation comme le PHP pour stocker les données du formulaire de réservation, le HTML, CSS mais aussi du JavaScript.')">
+                <img src="img/dumpie.png" alt="Projet 1" class="project-image" onclick="openPopup('Dump It Up', 'Février - Juin 2024', 'Projet réalisé en groupe ', 'Contexte : universitaire', 'Ce projet avait pour objectif de concevoir la charte graphique d’une association que nous avons fondée dans le cadre d’un projet citoyen. Cette association vise à sensibiliser et responsabiliser les individus à la protection de la nature sur les littoraux français. Nous avons nommé ce projet Dump It Up et créé une mascotte emblématique pour porter la cause et mobiliser le plus grand nombre.', 'Logiciel utilisé : Figma')">
                 
                 <img src="img/interview.png" alt="Projet 2" class="project-image" onclick="openPopup('Interview','Novembre 2023 - Janvier 2024','Projet réalisé seule','Contexte : universitaire', 'Il nous était demandé d’interviewer un professionnel de la photo, que ce soit un régisseur de studio, un photographe ou autre. Avec mon groupe, nous avons eu la chance d’interroger Ludovic BARON, un photographe. Nous avons réalisé l’interview à la Samaritaine. La vidéo a été réalisée avec des caméras, des micros et des spots de lumière. Pour finir, nous avons tous dû produire une version différente de l’interview à partir des rushs. J’ai donc effectué le montage vidéo sur Adobe Premiere Pro.','Logiciel utilisé :  Adobe Premiere Pro')">
                 
-                <img src="img/refonte.png" alt="Projet 3" class="project-image" onclick="openPopup('Refonte d\'un Site', 'Mai - Juin 2024', 'Projet réalisé groupe','Contexte : universitaire','Pour ce projet, il nous était demandé de refaire l’intégralité de l’interface d’un site existant et de lui donner un tout autre aspect en changeant complètement son identité visuelle de base. Nous avons choisi de travailler sur le site d’Air France, qui, à première vue, est assez épuré, avec peu d’éléments, peu de contenu, et un manque de couleurs vives. Pour lui donner une nouvelle image, nous sommes donc partis sur un thème festif, proche du carnaval, intégrant des couleurs, des plumes, et des éléments associés.', 'Logiciel utilisé : Figma')">
+                <img src="img/refonte.png" alt="Projet 3" class="project-image" onclick="openPopup('Refonte d\'un Site', 'Mai - Juin 2024', 'Projet réalisé en groupe','Contexte : universitaire','Pour ce projet, il nous était demandé de refaire l’intégralité de l’interface d’un site existant et de lui donner un tout autre aspect en changeant complètement son identité visuelle de base. Nous avons choisi de travailler sur le site d’Air France, qui, à première vue, est assez épuré, avec peu d’éléments, peu de contenu, et un manque de couleurs vives. Pour lui donner une nouvelle image, nous sommes donc partis sur un thème festif, proche du carnaval, intégrant des couleurs, des plumes, et des éléments associés.', 'Logiciel utilisé : Figma')">
                 
                 <img src="img/journal.png" alt="Projet 4" class="project-image" onclick="openPopup('Journal de quartier','Novembre - Décembre 2023', 'Projet réalisé seule', 'Contexte : universitaire', 'Ce projet avait pour objectif de créer un journal de quartier sur la ville dans laquelle nous vivons. J’ai choisi de réaliser un journal sur la ville de Cergy. Pour ce faire, j’ai utilisé Adobe InDesign pour la mise en forme de mes textes et visuels, ainsi que Photoshop pour traiter mes images afin qu’elles conviennent au projet et qu’elles ne soient pas déformées.', 'Logiciel utilisé : Adobe Indesign, Adobe Photoshop')">
                 
@@ -209,7 +209,7 @@
       <!-- Script JS -->
     
     <script>
-       function openPopup(title, imageUrl, projet, date, contexte, description, logiciel, langage) {
+       function openPopup(title, projet, date, contexte, description, logiciel, langage) {
     // Fonction qui retourne la valeur si elle existe, sinon une chaîne vide
     function getDisplayValue(value) {
         return value ? value : "";  // Si la valeur est définie, on la retourne, sinon on retourne une chaîne vide
@@ -228,8 +228,8 @@
 
     // Switch pour gérer les liens spécifiques des projets
     switch (title) {
-        case 'Résaweb':
-            pdfButtonLink.href = "https://resaweb.guerrier.butmmi.o2switch.site/";
+        case 'Dump It Up':
+            pdfButtonLink.href = "https://www.figma.com/design/hHSe4PGvvpdTj7aKhC4p8C/Charte-graphique-Dump-It-Up?node-id=0-1&p=f";
             break;
         case 'Interview':
             pdfButtonLink.href = "https://youtu.be/Bpri6Zx5vzo";
