@@ -171,7 +171,7 @@ h1 {
 
 .cv {
     display: inline-block;
-    margin: 20px auto;
+    margin: 20px 10px; /* Ajoute un petit espace entre les boutons */
     padding: 10px 20px;
     border: 1px solid black;
     border-radius: 10px;
@@ -184,11 +184,33 @@ h1 {
     font-family: 'Poppins', sans-serif;
     position: relative;
     cursor: pointer;
-    bottom: 20px; 
+    bottom: 20px;
 }
 
-
 .cv:hover {
+    background-color: #c9f7ff;
+    transition: 0.3s;
+}
+
+.cv1 {
+    display: inline-block;
+    margin: 20px 10px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #c85fa0;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    cursor: pointer;
+    bottom: 20px;
+}
+
+.cv1:hover {
     background-color: #c9f7ff;
     transition: 0.3s;
 }
@@ -852,7 +874,7 @@ font-family: "Poppins";
     }
 
     
-    .btn, .cv {
+    .btn, .cv .cv1{
         padding: 10px;
         font-size: 14px;
         width: 100%;
@@ -882,7 +904,15 @@ font-family: "Poppins";
         flex-direction: column;
         gap: 20px;
     }
+    .btn-container {
+        text-align: center;
+    }
     
+    .btn-container .cv .cv1{
+        width: auto; 
+        display: inline-block; 
+    }
+
     .review {
         width: 90%;
         margin: 0 auto;
@@ -948,7 +978,7 @@ font-family: "Poppins";
             width: 100%;
         }
     
-        section.accueil .btn, section.accueil .cv {
+        section.accueil .btn, section.accueil .cv .cv1 {
             padding: 12px 15px;
             font-size: 1em;
             width: 90%;
